@@ -1,0 +1,104 @@
+QH
+### Magnetic axis to use as initial condition
+NFP = 4
+p2  = 1e5
+etabarInitial = 1.6622
+B2cInitial    = 0.02444
+iotaTarget    = -1.1906
+rcInitial     = [1.22, 0.21693, 0.013399, -0.0024396, -0.00084, -0.000089]
+zsInitial     = [0.,   0.17624, 0.012068, -0.0022843, -0.00076, -0.0001]
+## Extra inputs
+qvfilename = 'OptAxis'  # Overall filenames
+ncores=8 # Number of cores to use
+rr = 0.01 # Radial location to send to VMEC
+nIterations = 100 # Number of iterations in the optimization routine
+coilSeparation = 0.4 # REGCOIL parameter (distance between plasma and coils)
+targetValue = 0.005 # REGCOIL parameter (target value for normal Bfield on plasma surface)
+ilambda = 3 # REGCOIL parameter (index of regularization parameter to use)
+nPCoils=30 # Number of Fourier coefficients to Fourier transform coils
+accuracy=2000 # Resolution of integrals in Fourier transform
+txt_file.write(" R_START = 1.415 1.42 1.425 1.43 1.435 1.44 1.445 1.45 1.455 1.46 1.465 1.47 1.475 1.48 1.485 1.49 1.495 1.50\n")
+
+QA
+### Magnetic axis to use as initial condition
+NFP    =  2
+p2     =  0.0
+etabar =  0.8782361878175473
+B2c    =  0.911877842043238
+iota   =  0.3650662495270209
+rc     = [ 1.0,-0.15539792101233177,0.018848828622397246,-0.002376647535978239,0.00032799264423656984,-4.6838441584813964e-05,4.056333840130882e-06 ]
+zs     = [ 0.0,0.1670115095908119,-0.018820974430055693,0.002362225786275556,-0.0003434355033843257,5.131269616185478e-05,-4.611592081745671e-06 ]
+## Extra inputs
+qvfilename  = 'OptAxis'  # Overall filenames
+ncores      = 8 # Number of cores to use
+rr          = 0.16 # Radial location to send to VMEC
+nIterations = 5000 # Number of iterations in the optimization routine
+coilSeparation = 0.25 # REGCOIL parameter (distance between plasma and coils)
+targetValue = 0.004 # REGCOIL parameter (target value for normal Bfield on plasma surface)
+nCoilsPerNFP = 6 # REGCOIL parameter (number of coils per NFP to cutcoilsfromregcoil)
+nPCoils     = 22 # Number of Fourier coefficients to Fourier transform coils
+accuracy    = 50000 # Resolution of integrals in Fourier transform
+findResidue = 0 # Compute the residue with SPEC+pyoculus
+pResidue    = 9 # Residue parameter iota=p/q
+qResudue    = 25 # Residue parameter iota=p/q
+s_guessResidue = 0.5 # Initial guess for the radial location of the residue
+
+QH
+### Magnetic axis to use as initial condition
+NFP    =  5
+p2     =  0.0
+etabar =  2.7963000355127248
+B2c    =  0.5806013581288338
+iota   =  1.757654433416328
+rc     = [ 1.0,-0.20648860910396244,0.02404053685952851,-0.0016768222573138214,2.7937733310544917e-05,-1.9523408702787104e-06,1.1283483707147605e-06 ]
+zs     = [ 0.0,0.1935925315246324,-0.023586944340336223,0.001761317958715854,-3.0312749934622144e-05,1.0035285423858269e-06,-1.2371055242849932e-06 ]
+## Extra inputs
+qvfilename  = 'OptAxis'  # Overall filenames
+ncores      = 8 # Number of cores to use
+rr          = 0.1 # Radial location to send to VMEC
+nIterations = 200 # Number of iterations in the optimization routine
+coilSeparation = 0.06 # REGCOIL parameter (distance between plasma and coils)
+targetValue = 0.07 # REGCOIL parameter (target value for normal Bfield on plasma surface)
+nCoilsPerNFP = 5 # REGCOIL parameter (number of coils per NFP to cutcoilsfromregcoil)
+
+QA
+### Magnetic axis to use as initial condition
+NFP    =  5
+p2     =  0.0
+etabar =  0.7293806955875688
+B2c    =  0.6578402659425325
+iota   =  0.8097641720391121
+rc     = [ 1.0,0.01807444003069384,0.0004690967096768651,-6.0726216607469606e-05,-3.1022220563422086e-06,6.068981007606979e-07 ]
+zs     = [ 0.0,-0.02023432706412913,-0.0005205202883466226,5.589239501272402e-05,2.936452740067459e-06,-6.242179921017206e-07 ]
+## Extra inputs
+qvfilename  = 'OptAxis'  # Overall filenames
+ncores      = 8 # Number of cores to use
+rr          = 0.04 # Radial location to send to VMEC
+nIterations = 2000 # Number of iterations in the optimization routine
+coilSeparation = 0.11 # REGCOIL parameter (distance between plasma and coils)
+targetValue = 0.03 # REGCOIL parameter (target value for normal Bfield on plasma surface)
+nCoilsPerNFP = 4 # REGCOIL parameter (number of coils per NFP to cutcoilsfromregcoil)
+
+QA with residues
+### Magnetic axis to use as initial condition
+NFP    =  3
+p2     =  0
+etabar =  0.5236729830210693
+B2c    =  0.04974684903522295
+iota   =  -0.392
+rc     = [ 1.4757,0.06424496637009013,0.0018673683633413096,-0.00025755395242288713,5.116006007555083e-05,2.0360554674388324e-05 ]
+zs     = [ 0.0,0.07876347232602264,0.0016390204587801032,-0.00031933698622468973,2.4904084238695518e-05,1.515282719142529e-05 ]
+## Extra inputs
+qvfilename  = 'OptAxis'  # Overall filenames
+ncores      = 8 # Number of cores to use
+rr          = 0.11 # Radial location to send to VMEC
+nIterations = 5 # Number of iterations in the optimization routine
+coilSeparation = 0.16 # REGCOIL parameter (distance between plasma and coils)
+targetValue = 0.004 # REGCOIL parameter (target value for normal Bfield on plasma surface)
+nCoilsPerNFP = 4 # REGCOIL parameter (number of coils per NFP to cutcoilsfromregcoil)
+nPCoils     = 22 # Number of Fourier coefficients to Fourier transform coils
+accuracy    = 50000 # Resolution of integrals in Fourier transform
+findResidue = 0 # Compute the residue with SPEC+pyoculus
+pResidue    = 1 # Residue parameter iota=p/q
+qResudue    = 3 # Residue parameter iota=p/q
+s_guessResidue = 1.6 # Initial guess for the radial location of the residue

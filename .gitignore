@@ -1,3 +1,23 @@
+# PDF files
+*.pdf
+
+# Optimization and coils files
+*.dat
+
+# SPEC files
+*.sp
+
+# Results folder
+Results/
+
+# Executables
+quasisymmetry
+xfieldlines
+xbooz_xform
+xvmec2000
+regcoil
+cutCoilsFromRegcoil
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
